@@ -18,14 +18,6 @@ am_18 = chord("A#4", duration=1/8)
 first_line = (c | f | f_18 | g_18 | f_18 | e_18 | d | d)
 second_line = (d | g | g_18 | a_18 | g_18 | f_18 | e | e )
 third_line = (e | a | a_18 | am_18 | a_18 | g_18 | f | d)
-last_line = (c_18)
-
-
-last_line = (C('C', duration=1/8) |
-             C('C', duration=1/8) |
-             C('D') |
-             C('G') |
-             C('Em') |
-             C('F'))
+last_line = (c_18 | c_18 | d | g | e | f)
 
 play(first_line | second_line | third_line | last_line)
